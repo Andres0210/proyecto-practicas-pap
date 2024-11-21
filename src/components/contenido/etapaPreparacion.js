@@ -1,7 +1,7 @@
 import imagen1 from "../image/thought-catalog-BlGmdY18CFQ-unsplash.jpg"
 import imagen2 from "../image/pexels-fauxels-3184418.jpg"
-import imagen3 from "../image/alexis-brown-omeaHbEFlN4-unsplash.jpg"
-import imagen4 from "../image/pexels-rdne-7564256.jpg"
+import imagen3 from "../image/pexels-cottonbro-4101143.jpg"
+import imagen4 from "../image/pexels-silverkblack-23495757.jpg"
 export const etapaData = [
     {
       subtitulo: "¿Estoy en condiciones? ",

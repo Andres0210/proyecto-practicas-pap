@@ -31,7 +31,7 @@ export default function Contenido() {
     "Antecedentes",
     "Objetivos",
     "Conceptos básicos",
-    "Autoevaluación",
+    "Etapa de preparación",
     "Preparación: Entrenamiento",
     "Preparación: Habilidades comunicativas",
     "Preparación: Regulación de emociones",
@@ -354,7 +354,7 @@ export default function Contenido() {
                  textAlign: "center",
                  
                }}
-               id="1"
+               id="2"
             >
               Conceptos básicos
             </Typography>
@@ -403,6 +403,7 @@ export default function Contenido() {
         align="center"
         gutterBottom
         sx={{ fontWeight: "bold", color: "#006b61" }}
+        id="3"
       >
         Etapa de Preparación
       </Typography>
@@ -447,10 +448,7 @@ export default function Contenido() {
         </Box>
       ))}
     </Container>
-      <div id="3">
-        <h1>Etapa de preparación</h1>
-        <p>El Rol del Psicólogo</p>
-      </div>
+      
       <div id="4">
         <h1>Entrenamiento</h1>
         <p>El Rol del Psicólogo</p>
