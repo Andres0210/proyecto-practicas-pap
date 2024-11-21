@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# proyecto-practicas-pap
+Proyecto de prácticas de estudiantes uniersitarios de psicología, donde se desarrolla una guía para los estudiantes de psicología para casos de primeros auxilios psicológicos
+>>>>>>> e3d32183d65df8d3ad5f044b51460cc2dbc35338
