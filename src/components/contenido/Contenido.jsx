@@ -19,12 +19,9 @@ import React from "react";
 import "../contenido/estilosContenido.css";
 import imgAntecedentes1 from "../image/pexels-shvets-production-7176319.jpg";
 import imgAntecedentes2 from "../image/pexels-david-garrison-1128051-2128817.jpg";
+import entrenamientoImg from "../image/pexels-polina-zimmerman-3747462.jpg"
 import { conceptos } from "./conceptos";
 import { etapaData } from "./etapaPreparacion";
-
-
-
-
 
 export default function Contenido() {
   const content = [
@@ -55,12 +52,14 @@ export default function Contenido() {
     "Proporcionar una herramienta accesible y comprensible para los psicólogos en formación, que les permita aplicar los Primeros Auxilios Psicológicos (PAP) de manera efectiva en situaciones de crisis.",
     "Mejorar las habilidades y conocimientos de los psicólogos en formación, facilitando su preparación para intervenir en momentos críticos y responder adecuadamente a las necesidades de los afectados.",
     "Actuar como orientación práctica para los psicólogos en formación, ofreciendo pautas claras sobre cómo abordar situaciones de crisis y aplicar técnicas de intervención.",
-    "Brindar psicoeducación sobre conceptos básicos, reglas y normas que garanticen intervenciones éticas y eficaces, asegurando el respeto por la dignidad y los derechos de los pacientes en todo momento."
+    "Brindar psicoeducación sobre conceptos básicos, reglas y normas que garanticen intervenciones éticas y eficaces, asegurando el respeto por la dignidad y los derechos de los pacientes en todo momento.",
   ];
 
   return (
     <Box class="contenidoBox">
-      <Divider sx={{marginBottom:"50px", marginLeft:"120px", marginRight:"120px"}}></Divider>
+      <Divider
+        sx={{ marginBottom: "50px", marginLeft: "120px", marginRight: "120px" }}
+      ></Divider>
       <Container>
         <Typography
           variant="h3"
@@ -100,7 +99,7 @@ export default function Contenido() {
                   variant="h6"
                   gutterBottom
                   className="temasContenido"
-                  sx={{color:"#6ede00;"}}
+                  sx={{ color: "#6ede00;" }}
                 >
                   {item}
                 </Typography>
@@ -121,7 +120,7 @@ export default function Contenido() {
         <Box
           id="0"
           sx={{
-            background: 'linear-gradient(to right, #ffffff, #b2f0b2)',
+            background: "linear-gradient(to right, #ffffff, #b2f0b2)",
             padding: "150px 0",
           }}
         >
@@ -264,23 +263,28 @@ export default function Contenido() {
 
         {/*  OBJETIVOS*/}
 
-        
-        <Box className='objetives' sx={{ background: 'linear-gradient(to right, #ffffff, #b2f0b2)', padding: '50px 0', padding: "50px 0" }}>
+        <Box
+          className="objetives"
+          sx={{
+            background: "linear-gradient(to right, #ffffff, #b2f0b2)",
+            padding: "50px 0",
+            padding: "50px 0",
+          }}
+        >
           <Container>
             <Typography
-               variant="h4"
-               gutterBottom
-               component="a"
-               sx={{
-                 position: "relative",
-                 fontWeight: "bold",
-                 color: "#333",
-                 textTransform: "uppercase",
-                 letterSpacing: "2px",
-                 textAlign: "center",
-                 
-               }}
-               id="1"
+              variant="h4"
+              gutterBottom
+              component="a"
+              sx={{
+                position: "relative",
+                fontWeight: "bold",
+                color: "#333",
+                textTransform: "uppercase",
+                letterSpacing: "2px",
+                textAlign: "center",
+              }}
+              id="1"
             >
               Objetivos
             </Typography>
@@ -288,13 +292,14 @@ export default function Contenido() {
               {objetivos.map((objetivo, index) => (
                 <Grid item xs={12} sm={6} md={3} key={index}>
                   <Card
-                  className="cardObj"
+                    className="cardObj"
                     sx={{
-                      marginTop:"60px",
+                      marginTop: "60px",
                       borderRadius: "50px",
-                      height:"400px",
+                      height: "400px",
                       boxShadow: 3,
-                      background: 'linear-gradient(to bottom, #E9E4F0, #f2f2f2)',
+                      background:
+                        "linear-gradient(to bottom, #E9E4F0, #f2f2f2)",
                       padding: "20px",
                       display: "flex",
                       flexDirection: "column",
@@ -314,20 +319,19 @@ export default function Contenido() {
                           color: "#6ede00;", // Verde menta oscuro
                           textAlign: "center",
                           mb: 2,
-                          fontWeight:"700"
+                          fontWeight: "700",
                         }}
                       >
                         Objetivo {index + 1}
                       </Typography>
                       <Typography
                         variant="body1"
-                        
                         sx={{
                           textAlign: "center",
                           lineHeight: 1.6,
                           fontSize: "16px",
-                          color:"#333333",
-                          fontWeight:"700"
+                          color: "#333333",
+                          fontWeight: "700",
                         }}
                       >
                         {objetivo}
@@ -340,119 +344,206 @@ export default function Contenido() {
           </Container>
         </Box>
       </div>
-      <Container   className="conceptosContainer">
-      <Typography
-               variant="h4"
-               gutterBottom
-               component="a"
-               sx={{
-                 position: "relative",
-                 fontWeight: "bold",
-                 color: "#333",
-                 textTransform: "uppercase",
-                 letterSpacing: "2px",
-                 textAlign: "center",
-                 
-               }}
-               id="2"
-            >
-              Conceptos básicos
-            </Typography>
-      <Grid container spacing={3} style={{ padding: "20px" }}>
-      {conceptos.map((concepto, index) => (
-        <Grid item xs={12} sm={6} md={4} key={index}>
-          <Card 
-            sx={{ 
-              maxWidth: 345, 
-              display: "flex", 
-              flexDirection: "column", 
-              alignItems: "center", 
-              height: 500
-            }}
-          >
-            <CardMedia
-              component="img"
-              height="140"
-              image={concepto.imagen} // Imagen del concepto
-              alt={concepto.titulo}
-            />
-            <CardContent>
-              <Typography 
-                variant="h6" 
-                component="div" 
-                sx={{ fontWeight: "bold", textAlign: "center" }}
+      <Container className="conceptosContainer">
+        <Typography
+          variant="h4"
+          gutterBottom
+          component="a"
+          sx={{
+            position: "relative",
+            fontWeight: "bold",
+            color: "#333",
+            textTransform: "uppercase",
+            letterSpacing: "2px",
+            textAlign: "center",
+          }}
+          id="2"
+        >
+          Conceptos básicos
+        </Typography>
+        <Grid container spacing={3} style={{ padding: "20px" }}>
+          {conceptos.map((concepto, index) => (
+            <Grid item xs={12} sm={6} md={4} key={index}>
+              <Card
+                sx={{
+                  maxWidth: 345,
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  height: 500,
+                }}
               >
-                {concepto.titulo} {/* Nombre del concepto */}
-              </Typography>
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                sx={{ textAlign: "justify", marginTop: "10px" }}
-                dangerouslySetInnerHTML={{ __html: concepto.definicion }}
-              />
-            </CardContent>
-          </Card>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={concepto.imagen} // Imagen del concepto
+                  alt={concepto.titulo}
+                />
+                <CardContent>
+                  <Typography
+                    variant="h6"
+                    component="div"
+                    sx={{ fontWeight: "bold", textAlign: "center" }}
+                  >
+                    {concepto.titulo} {/* Nombre del concepto */}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    sx={{ textAlign: "justify", marginTop: "10px" }}
+                    dangerouslySetInnerHTML={{ __html: concepto.definicion }}
+                  />
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
         </Grid>
-      ))}
-    </Grid>
-    </Container>
-    <Container sx={{ paddingY: 4 }}>
-      {/* Título Principal */}
-      <Typography
-        variant="h3"
-        align="center"
-        gutterBottom
-        sx={{ fontWeight: "bold", color: "#006b61" }}
-        id="3"
-      >
-        Etapa de Preparación
-      </Typography>
+      </Container>
+      <Container sx={{ paddingY: 4 }}>
+        {/* Título Principal */}
+        <Typography
+          variant="h3"
+          align="center"
+          gutterBottom
+          sx={{ fontWeight: "bold", color: "#006b61" }}
+          id="3"
+        >
+          Etapa de Preparación
+        </Typography>
 
-      {/* Subtítulos con contenido */}
-      {etapaData.map((item, index) => (
-        <Box key={index} sx={{ marginY: 4 }}>
+        {/* Subtítulos con contenido */}
+        {etapaData.map((item, index) => (
+          <Box key={index} sx={{ marginY: 4 }}>
+            <Typography
+              variant="h5"
+              gutterBottom
+              sx={{ fontWeight: "bold", color: "#333" }}
+            >
+              {item.subtitulo}
+            </Typography>
+            <Typography
+              variant="body1"
+              gutterBottom
+              sx={{ textAlign: "justify" }}
+            >
+              {item.definicion}
+            </Typography>
+            <Box
+              component="img"
+              src={item.imagen}
+              alt={`Imagen para ${item.subtitulo}`}
+              sx={{
+                width: "100%",
+                maxWidth: 500,
+                height: "auto",
+                display: "block",
+                margin: "16px auto",
+                borderRadius: 4,
+                boxShadow: 2,
+              }}
+            />
+            <Typography
+              variant="body2"
+              sx={{
+                fontStyle: "italic",
+                textAlign: "justify",
+                color: "gray",
+              }}
+            >
+              {item.reflexion}
+            </Typography>
+          </Box>
+        ))}
+      </Container>
+      <div className="presentacion">
+        <Container
+          sx={{ display: "flex", flexDirection: "column", padding: 4 }}
+        >
           <Typography
-            variant="h5"
-            gutterBottom
-            sx={{ fontWeight: "bold", color: "#333" }}
-          >
-            {item.subtitulo}
-          </Typography>
-          <Typography variant="body1" gutterBottom sx={{ textAlign: "justify" }}>
-            {item.definicion}
-          </Typography>
-          <Box
-            component="img"
-            src={item.imagen}
-            alt={`Imagen para ${item.subtitulo}`}
-            sx={{
-              width: "100%",
-              maxWidth: 500,
-              height: "auto",
-              display: "block",
-              margin: "16px auto",
-              borderRadius: 4,
-              boxShadow: 2,
-            }}
-          />
-          <Typography
-            variant="body2"
-            sx={{
-              fontStyle: "italic",
-              textAlign: "justify",
-              color: "gray",
-            }}
-          >
-            {item.reflexion}
-          </Typography>
-        </Box>
-      ))}
-    </Container>
-      
-      <div id="4">
-        <h1>Entrenamiento</h1>
-        <p>El Rol del Psicólogo</p>
+                  variant="h3"
+                  gutterBottom
+                  component="a"
+                  sx={{
+                    position: "relative",
+                    fontWeight: "bold",
+                    color: "#333",
+                    textTransform: "uppercase",
+                    letterSpacing: "2px",
+                    textAlign: "center",
+                    
+                  }}
+                  id='4'
+                >
+                  ¿Porqué es importante el entrenamiento?
+                </Typography>
+          <Grid container spacing={4} alignItems="center">
+            {/* Texto */}
+            <Grid item xs={12} md={6}>
+              <div className="textContainer">
+                
+                <Box>
+                  <Typography
+                    variant="body1"
+                    color="text.secondary"
+                    sx={{
+                      lineHeight: 1.8,
+                      textAlign: "justify",
+                      marginTop: "45px",
+                    }}
+                  >
+                    La preparación y el conocimiento son fundamentales para
+                    intervenir de manera efectiva en momentos de crisis." Esta
+                    afirmación del psicólogo David G. Myers (2014) resalta la
+                    importancia de que el psicólogo en formación cuente con una
+                    sólida base de habilidades, conocimientos de técnicas y
+                    estrategias, así como actitudes adecuadas para que su
+                    intervención sea eficaz. Tener habilidades interpersonales,
+                    como la empatía y la escucha activa, permite establecer una
+                    conexión genuina con quienes están en crisis. Además, el
+                    dominio de técnicas específicas, como la regulación
+                    emocional y el manejo del estrés, proporciona herramientas
+                    prácticas para abordar situaciones difíciles. Las actitudes,
+                    como la paciencia y la apertura, son sumamente importantes
+                    al momento de crear un ambiente seguro y de confianza. <br/><br/>Por
+                    ejemplo, imagine que en su sitio de práctica recibe a una
+                    joven que acaba de perder a su madre. Ella se siente
+                    abrumada por la tristeza y la confusión, sin saber cómo
+                    manejar su dolor. Si usted se encuentra preparado y cuenta
+                    con las herramientas para realizar una adecuada
+                    intervención, podrá acercarse con sensibilidad, creando un
+                    espacio seguro donde ella puede expresar sus emociones.
+                    Validar su dolor y ofrecer apoyo, ayudándola a entender que
+                    sus sentimientos son normales y que no está sola. Además, le
+                    sugiere recursos de apoyo, como grupos de duelo o terapia,
+                    lo que puede ser crucial para su proceso de sanación. Esta
+                    capacidad de respuesta no solo ayuda a la joven a sentirse
+                    comprendida y apoyada, sino que también refuerza su
+                    confianza en su habilidad para manejar situaciones
+                    emocionales difíciles.
+                  </Typography>
+                </Box>
+              </div>
+            </Grid>
+
+            {/* Imagen */}
+            <Grid item xs={12} md={6}>
+              <div className="imagenEntContainer">
+                <img
+                  className="imgPsico"
+                  alt="Imagen Psicología"
+                  src={entrenamientoImg}
+                  style={{
+                    width: "100%",
+                    borderRadius: 8,
+                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                  }}
+                />
+              </div>
+            </Grid>
+          </Grid>
+        </Container>
       </div>
+     
       <div id="6">
         <h1>Preparación: Regulación de emociones</h1>
         <p>El Rol del Psicólogo</p>
