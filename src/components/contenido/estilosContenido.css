@@ -1,0 +1,38 @@
+.contenidoBox {
+    background: #ffefba; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #ffffff,
+      #ffefba
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #ffffff,
+      #ffefba
+    );
+  padding-top: 100px;
+}
+.listaContenido {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.contenidoLinks {
+  text-decoration: none;
+}
+.antecedentesContainer {
+  background-color: aquamarine;
+}
+.temasContenido {
+  text-decoration: none;
+}
+.cardObj {
+    background: white; 
+}
+.objetives {
+   
+}
+
+.conceptosContainer{
+    margin-top: 150px;
+}
