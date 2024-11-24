@@ -19,14 +19,16 @@ import React from "react";
 import "../contenido/estilosContenido.css";
 import imgAntecedentes1 from "../image/pexels-shvets-production-7176319.jpg";
 import imgAntecedentes2 from "../image/pexels-david-garrison-1128051-2128817.jpg";
-import entrenamientoImg from "../image/pexels-polina-zimmerman-3747462.jpg"
+import entrenamientoImg from "../image/pexels-polina-zimmerman-3747462.jpg";
 import { conceptos } from "./conceptos";
 import { etapaData } from "./etapaPreparacion";
+import Reviews from "../comentarios/Reviews";
+import ReviewForm from "../formulario/ReviewForm";
 
 export default function Contenido() {
   const content = [
     "Antecedentes",
-    "Objetivos",
+
     "Conceptos básicos",
     "Etapa de preparación",
     "Preparación: Entrenamiento",
@@ -38,7 +40,6 @@ export default function Contenido() {
   ];
   const description = [
     "Antecedentes sobre los Primeros Auxilios Psicológicos (PAP): su importancia en crisis y elementos clave para el apoyo emocional.",
-    "Objetivos",
     "Conceptos básicos",
     "Autoevaluación",
     "Preparación: Entrenamiento",
@@ -47,12 +48,6 @@ export default function Contenido() {
     "Preparación: Evaluación de la situación",
     "Preparación: Aproximación segura",
     "Preparación: Priorización de necesidades",
-  ];
-  const objetivos = [
-    "Proporcionar una herramienta accesible y comprensible para los psicólogos en formación, que les permita aplicar los Primeros Auxilios Psicológicos (PAP) de manera efectiva en situaciones de crisis.",
-    "Mejorar las habilidades y conocimientos de los psicólogos en formación, facilitando su preparación para intervenir en momentos críticos y responder adecuadamente a las necesidades de los afectados.",
-    "Actuar como orientación práctica para los psicólogos en formación, ofreciendo pautas claras sobre cómo abordar situaciones de crisis y aplicar técnicas de intervención.",
-    "Brindar psicoeducación sobre conceptos básicos, reglas y normas que garanticen intervenciones éticas y eficaces, asegurando el respeto por la dignidad y los derechos de los pacientes en todo momento.",
   ];
 
   return (
@@ -72,6 +67,7 @@ export default function Contenido() {
             textTransform: "uppercase",
             letterSpacing: "2px",
             textAlign: "center",
+            color: "#6ede00",
           }}
         >
           Contenido
@@ -120,7 +116,7 @@ export default function Contenido() {
         <Box
           id="0"
           sx={{
-            background: "linear-gradient(to right, #ffffff, #b2f0b2)",
+            background: "linear-gradient(to bottom, #ffffff, #f2f2f2",
             padding: "150px 0",
           }}
         >
@@ -140,6 +136,7 @@ export default function Contenido() {
                       textTransform: "uppercase",
                       letterSpacing: "2px",
                       textAlign: "center",
+                      color: "#6ede00",
                     }}
                     id="0"
                   >
@@ -262,87 +259,6 @@ export default function Contenido() {
         </Box>
 
         {/*  OBJETIVOS*/}
-
-        <Box
-          className="objetives"
-          sx={{
-            background: "linear-gradient(to right, #ffffff, #b2f0b2)",
-            padding: "50px 0",
-            padding: "50px 0",
-          }}
-        >
-          <Container>
-            <Typography
-              variant="h4"
-              gutterBottom
-              component="a"
-              sx={{
-                position: "relative",
-                fontWeight: "bold",
-                color: "#333",
-                textTransform: "uppercase",
-                letterSpacing: "2px",
-                textAlign: "center",
-              }}
-              id="1"
-            >
-              Objetivos
-            </Typography>
-            <Grid container spacing={4} justifyContent="center">
-              {objetivos.map((objetivo, index) => (
-                <Grid item xs={12} sm={6} md={3} key={index}>
-                  <Card
-                    className="cardObj"
-                    sx={{
-                      marginTop: "60px",
-                      borderRadius: "50px",
-                      height: "400px",
-                      boxShadow: 3,
-                      background:
-                        "linear-gradient(to bottom, #E9E4F0, #f2f2f2)",
-                      padding: "20px",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      transition: "transform 0.3s ease",
-                      "&:hover": {
-                        transform: "scale(1.05)",
-                      },
-                    }}
-                  >
-                    <CardContent>
-                      <Typography
-                        variant="h6"
-                        sx={{
-                          fontWeight: "bold",
-                          color: "#6ede00;", // Verde menta oscuro
-                          textAlign: "center",
-                          mb: 2,
-                          fontWeight: "700",
-                        }}
-                      >
-                        Objetivo {index + 1}
-                      </Typography>
-                      <Typography
-                        variant="body1"
-                        sx={{
-                          textAlign: "center",
-                          lineHeight: 1.6,
-                          fontSize: "16px",
-                          color: "#333333",
-                          fontWeight: "700",
-                        }}
-                      >
-                        {objetivo}
-                      </Typography>
-                    </CardContent>
-                  </Card>
-                </Grid>
-              ))}
-            </Grid>
-          </Container>
-        </Box>
       </div>
       <Container className="conceptosContainer">
         <Typography
@@ -356,8 +272,9 @@ export default function Contenido() {
             textTransform: "uppercase",
             letterSpacing: "2px",
             textAlign: "center",
+            color: "#6ede00",
           }}
-          id="2"
+          id="1"
         >
           Conceptos básicos
         </Typography>
@@ -402,13 +319,21 @@ export default function Contenido() {
       <Container sx={{ paddingY: 4 }}>
         {/* Título Principal */}
         <Typography
-          variant="h3"
-          align="center"
+          variant="h4"
           gutterBottom
-          sx={{ fontWeight: "bold", color: "#006b61" }}
-          id="3"
+          component="a"
+          sx={{
+            position: "relative",
+            fontWeight: "bold",
+            color: "#333",
+            textTransform: "uppercase",
+            letterSpacing: "2px",
+            textAlign: "center",
+            color: "#6ede00",
+          }}
+          id="2"
         >
-          Etapa de Preparación
+          Etapa de preparación
         </Typography>
 
         {/* Subtítulos con contenido */}
@@ -460,27 +385,26 @@ export default function Contenido() {
           sx={{ display: "flex", flexDirection: "column", padding: 4 }}
         >
           <Typography
-                  variant="h3"
-                  gutterBottom
-                  component="a"
-                  sx={{
-                    position: "relative",
-                    fontWeight: "bold",
-                    color: "#333",
-                    textTransform: "uppercase",
-                    letterSpacing: "2px",
-                    textAlign: "center",
-                    
-                  }}
-                  id='4'
-                >
-                  ¿Porqué es importante el entrenamiento?
-                </Typography>
+            variant="h5"
+            gutterBottom
+            component="a"
+            sx={{
+              position: "relative",
+              fontWeight: "bold",
+              color: "#333",
+              textTransform: "uppercase",
+              letterSpacing: "2px",
+              textAlign: "center",
+              color: "#6ede00",
+            }}
+            id="3"
+          >
+            ¿Porqué es importante el entrenamiento?
+          </Typography>
           <Grid container spacing={4} alignItems="center">
             {/* Texto */}
             <Grid item xs={12} md={6}>
               <div className="textContainer">
-                
                 <Box>
                   <Typography
                     variant="body1"
@@ -504,9 +428,11 @@ export default function Contenido() {
                     emocional y el manejo del estrés, proporciona herramientas
                     prácticas para abordar situaciones difíciles. Las actitudes,
                     como la paciencia y la apertura, son sumamente importantes
-                    al momento de crear un ambiente seguro y de confianza. <br/><br/>Por
-                    ejemplo, imagine que en su sitio de práctica recibe a una
-                    joven que acaba de perder a su madre. Ella se siente
+                    al momento de crear un ambiente seguro y de confianza.{" "}
+                    <br />
+                    <br />
+                    Por ejemplo, imagine que en su sitio de práctica recibe a
+                    una joven que acaba de perder a su madre. Ella se siente
                     abrumada por la tristeza y la confusión, sin saber cómo
                     manejar su dolor. Si usted se encuentra preparado y cuenta
                     con las herramientas para realizar una adecuada
@@ -527,24 +453,25 @@ export default function Contenido() {
 
             {/* Imagen */}
             <Grid item xs={12} md={6}>
-              <div className="imagenEntContainer">
+              <Box sx={{display:"flex", justifyContent:"center"}}>
                 <img
-                  className="imgPsico"
+                  
                   alt="Imagen Psicología"
                   src={entrenamientoImg}
                   style={{
-                    width: "100%",
+                    width: "70%",
                     borderRadius: 8,
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+                    margin:"0 auto"
                   }}
                 />
-              </div>
+              </Box>
             </Grid>
           </Grid>
         </Container>
       </div>
-     
-      <div id="6">
+
+      {/* <div id="6">
         <h1>Preparación: Regulación de emociones</h1>
         <p>El Rol del Psicólogo</p>
       </div>
@@ -559,7 +486,48 @@ export default function Contenido() {
       <div id="9">
         <h1>Preparación: Priorización de necesidades</h1>
         <p>El Rol del Psicólogo</p>
-      </div>
+      </div> */}
+      <Container maxWidth="md" sx={{ mt: 4 }}>
+        {/* Descripción para dejar un comentario */}
+        <Box
+          sx={{
+            padding: 4,
+            borderRadius: 2,
+            textAlign: "center",
+            mb: 4,
+          }}
+        >
+          <Typography
+            variant="h4"
+            gutterBottom
+            sx={{ fontWeight: "bold", color: "#6ede00" }}
+          >
+            ¡Deja tu opinión!
+          </Typography>
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            sx={{ fontSize: "1.1rem" }}
+          >
+            Queremos saber lo que piensas. Comparte tu experiencia con nosotros
+            y ayúdanos a mejorar. Tu opinión cuenta.
+          </Typography>
+        </Box>
+        <ReviewForm />
+        {/* Título para la sección de comentarios */}
+        <Typography
+          variant="h4"
+          sx={{
+            fontWeight: "bold",
+            borderBottom: "2px solid #1976d2",
+            display: "inline-block",
+            mb: 3,
+          }}
+        >
+          Comentarios de otros usuarios
+        </Typography>
+        <Reviews />
+      </Container>
     </Box>
   );
 }

@@ -1,9 +1,15 @@
 import React from "react";
 import "../presentation/estilosPresentation.css";
 import imgPsico from "../image/pap image.webp";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Card, CardContent, Container, Grid, Typography } from "@mui/material";
 
 export default function Presentation() {
+  const objetivos = [
+    "Proporcionar una herramienta accesible y comprensible para los psicólogos en formación, que les permita aplicar los Primeros Auxilios Psicológicos (PAP) de manera efectiva en situaciones de crisis.",
+    "Mejorar las habilidades y conocimientos de los psicólogos en formación, facilitando su preparación para intervenir en momentos críticos y responder adecuadamente a las necesidades de los afectados.",
+    "Actuar como orientación práctica para los psicólogos en formación, ofreciendo pautas claras sobre cómo abordar situaciones de crisis y aplicar técnicas de intervención.",
+    "Brindar psicoeducación sobre conceptos básicos, reglas y normas que garanticen intervenciones éticas y eficaces, asegurando el respeto por la dignidad y los derechos de los pacientes en todo momento.",
+  ];
   return (
     <div className="presentacion">
       <Container sx={{ display: "flex", flexDirection: "column", padding: 4 }}>
@@ -88,6 +94,86 @@ export default function Presentation() {
           </Grid>
         </Grid>
       </Container>
+      <Box
+          className="objetives"
+          sx={{
+            
+            padding: "50px 0",
+            padding: "50px 0",
+          }}
+        >
+          <Container>
+            <Typography
+              variant="h4"
+              gutterBottom
+              component="a"
+              sx={{
+                position: "relative",
+                fontWeight: "bold",
+                color: "#333",
+                textTransform: "uppercase",
+                letterSpacing: "2px",
+                textAlign: "center",
+              }}
+              
+            >
+              Objetivos
+            </Typography>
+            <Grid container spacing={4} justifyContent="center">
+              {objetivos.map((objetivo, index) => (
+                <Grid item xs={12} sm={6} md={3} key={index}>
+                  <Card
+                    className="cardObj"
+                    sx={{
+                      marginTop: "60px",
+                      borderRadius: "50px",
+                      height: "400px",
+                      boxShadow: 3,
+                      background:
+                        "linear-gradient(to bottom, #E9E4F0, #f2f2f2)",
+                      padding: "20px",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      transition: "transform 0.3s ease",
+                      "&:hover": {
+                        transform: "scale(1.05)",
+                      },
+                    }}
+                  >
+                    <CardContent>
+                      <Typography
+                        variant="h6"
+                        sx={{
+                          fontWeight: "bold",
+                          color: "#6ede00;", // Verde menta oscuro
+                          textAlign: "center",
+                          mb: 2,
+                          fontWeight: "700",
+                        }}
+                      >
+                        Objetivo {index + 1}
+                      </Typography>
+                      <Typography
+                        variant="body1"
+                        sx={{
+                          textAlign: "center",
+                          lineHeight: 1.6,
+                          fontSize: "16px",
+                          color: "#333333",
+                          fontWeight: "700",
+                        }}
+                      >
+                        {objetivo}
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Grid>
+              ))}
+            </Grid>
+          </Container>
+        </Box>
     </div>
   );
 }
