@@ -1,7 +1,14 @@
 import React from "react";
-import "../presentation/estilosPresentation.css";
+
 import imgPsico from "../image/pap image.webp";
-import { Box, Card, CardContent, Container, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardContent,
+  Container,
+  Grid,
+  Typography,
+} from "@mui/material";
 
 export default function Presentation() {
   const objetivos = [
@@ -12,32 +19,35 @@ export default function Presentation() {
   ];
   return (
     <div className="presentacion">
-      <Container sx={{ display: "flex", flexDirection: "column", padding: 4 }}>
+      <Container sx={{ display: "flex", flexDirection: "column", padding: 4, marginTop:"150px" }}>
         <Grid container spacing={4} alignItems="center">
           {/* Texto */}
           <Grid item xs={12} md={6}>
             <div className="textContainer">
-            <Typography
-          variant="h3"
-          gutterBottom
-          component="a"
-          sx={{
-            position: "relative",
-            fontWeight: "bold",
-            color: "#333",
-            textTransform: "uppercase",
-            letterSpacing: "2px",
-            textAlign: "center",
-           
-          }}
-        >
-          Presentación
-        </Typography>
+              <Typography
+                variant="h3"
+                gutterBottom
+                component="a"
+                sx={{
+                  position: "relative",
+                  fontWeight: "bold",
+                  color: "#6ede00",
+                  textTransform: "uppercase",
+                  letterSpacing: "2px",
+                  textAlign: "center",
+                }}
+              >
+                Presentación
+              </Typography>
               <Box>
                 <Typography
                   variant="body1"
                   color="text.secondary"
-                  sx={{ lineHeight: 1.8, textAlign: "justify", marginTop:"45px" }}
+                  sx={{
+                    lineHeight: 1.8,
+                    textAlign: "justify",
+                    marginTop: "45px",
+                  }}
                 >
                   En el marco del proyecto “Guía de Intervención en Crisis:
                   Herramienta para el Psicólogo en Formación”, desarrollado por
@@ -94,86 +104,82 @@ export default function Presentation() {
           </Grid>
         </Grid>
       </Container>
+
       <Box
-          className="objetives"
-          sx={{
-            
-            padding: "50px 0",
-            padding: "50px 0",
-          }}
-        >
-          <Container>
-            <Typography
-              variant="h4"
-              gutterBottom
-              component="a"
-              sx={{
-                position: "relative",
-                fontWeight: "bold",
-                color: "#333",
-                textTransform: "uppercase",
-                letterSpacing: "2px",
-                textAlign: "center",
-              }}
-              
-            >
-              Objetivos
-            </Typography>
-            <Grid container spacing={4} justifyContent="center">
-              {objetivos.map((objetivo, index) => (
-                <Grid item xs={12} sm={6} md={3} key={index}>
-                  <Card
-                    className="cardObj"
-                    sx={{
-                      marginTop: "60px",
-                      borderRadius: "50px",
-                      height: "400px",
-                      boxShadow: 3,
-                      background:
-                        "linear-gradient(to bottom, #E9E4F0, #f2f2f2)",
-                      padding: "20px",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      transition: "transform 0.3s ease",
-                      "&:hover": {
-                        transform: "scale(1.05)",
-                      },
-                    }}
-                  >
-                    <CardContent>
-                      <Typography
-                        variant="h6"
-                        sx={{
-                          fontWeight: "bold",
-                          color: "#6ede00;", // Verde menta oscuro
-                          textAlign: "center",
-                          mb: 2,
-                          fontWeight: "700",
-                        }}
-                      >
-                        Objetivo {index + 1}
-                      </Typography>
-                      <Typography
-                        variant="body1"
-                        sx={{
-                          textAlign: "center",
-                          lineHeight: 1.6,
-                          fontSize: "16px",
-                          color: "#333333",
-                          fontWeight: "700",
-                        }}
-                      >
-                        {objetivo}
-                      </Typography>
-                    </CardContent>
-                  </Card>
-                </Grid>
-              ))}
-            </Grid>
-          </Container>
-        </Box>
+        className="objetives"
+        sx={{
+          padding: "50px 0",
+        }}
+      >
+        <Container>
+          <Typography
+            variant="h4"
+            gutterBottom
+            component="a"
+            sx={{
+              position: "relative",
+              fontWeight: "bold",
+              color: "#6ede00",
+              textTransform: "uppercase",
+              letterSpacing: "2px",
+              textAlign: "center",
+            }}
+          >
+            Objetivos
+          </Typography>
+          <Grid container spacing={4} justifyContent="center">
+            {objetivos.map((objetivo, index) => (
+              <Grid item xs={12} sm={6} md={3} key={index}>
+                <Card
+                  className="cardObj"
+                  sx={{
+                    marginTop: "60px",
+                    borderRadius: "50px",
+                    height: "400px",
+                    boxShadow: 3,
+                    background: "linear-gradient(to bottom, #E9E4F0, #f2f2f2)",
+                    padding: "20px",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    transition: "transform 0.3s ease",
+                    "&:hover": {
+                      transform: "scale(1.05)",
+                    },
+                  }}
+                >
+                  <CardContent>
+                    <Typography
+                      variant="h6"
+                      sx={{
+                        color: "#6ede00;", // Verde menta oscuro
+                        textAlign: "center",
+                        mb: 2,
+                        fontWeight: "700",
+                      }}
+                    >
+                      Objetivo {index + 1}
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      sx={{
+                        textAlign: "center",
+                        lineHeight: 1.6,
+                        fontSize: "16px",
+                        color: "#333333",
+                        fontWeight: "700",
+                      }}
+                    >
+                      {objetivo}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+      </Box>
     </div>
   );
 }

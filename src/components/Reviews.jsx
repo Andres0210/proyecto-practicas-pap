@@ -8,7 +8,9 @@ export default function Reviews() {
   useEffect(() => {
     const getReviews = async () => {
       try {
-        const response = await axios.get("https://back-pap-production.up.railway.app/review");
+        const response = await axios.get(
+          "https://back-pap-production.up.railway.app/review"
+        );
         setAllReviews(response.data); // Actualizar el estado con las reseñas
       } catch (error) {
         console.error("Error obteniendo reseñas:", error);
@@ -20,20 +22,29 @@ export default function Reviews() {
 
   return (
     <div>
+      <Typography
+        variant="h4"
+        sx={{
+          fontWeight: "bold",
+          borderBottom: "2px solid #1976d2",
+          display: "inline-block",
+          mb: 3,
+        }}
+      >
+        Comentarios de otros usuarios
+      </Typography>
       <Container>
-        
         <div>
-      {allReviews.map((review, index) => (
-        <ReviewCard
-          key={index}
-          email={review.email}
-          rating={review.rating}
-          comment={review.comment}
-        />
-      ))}
-    </div>
+          {allReviews.map((review, index) => (
+            <ReviewCard
+              key={index}
+              email={review.email}
+              rating={review.rating}
+              comment={review.comment}
+            />
+          ))}
+        </div>
       </Container>
-      
     </div>
   );
 }
