@@ -36,35 +36,41 @@ export default function Enetrenamiento() {
                     marginTop: "45px",
                   }}
                 >
-                  La preparación y el conocimiento son fundamentales para
-                  intervenir de manera efectiva en momentos de crisis." Esta
-                  afirmación del psicólogo David G. Myers (2014) resalta la
-                  importancia de que el psicólogo en formación cuente con una
-                  sólida base de habilidades, conocimientos de técnicas y
-                  estrategias, así como actitudes adecuadas para que su
-                  intervención sea eficaz. Tener habilidades interpersonales,
-                  como la empatía y la escucha activa, permite establecer una
-                  conexión genuina con quienes están en crisis. Además, el
-                  dominio de técnicas específicas, como la regulación emocional
-                  y el manejo del estrés, proporciona herramientas prácticas
-                  para abordar situaciones difíciles. Las actitudes, como la
-                  paciencia y la apertura, son sumamente importantes al momento
-                  de crear un ambiente seguro y de confianza. <br />
+                  <strong>1. </strong>Entrenarse en habilidades y competencias
+                  para brindar Primeros Auxilios Psicológicos (PAP) permite
+                  intervenir de manera efectiva en situaciones de crisis,
+                  ayudando a identificar y responder a las necesidades de las
+                  personas afectadas. <br />
+                  <strong>2.</strong> Una intervención temprana y adecuada puede
+                  prevenir el agravamiento de la crisis, lo que a su vez reduce
+                  la necesidad de tratamientos más intensivos en el futuro.
                   <br />
-                  Por ejemplo, imagine que en su sitio de práctica recibe a una
-                  joven que acaba de perder a su madre. Ella se siente abrumada
-                  por la tristeza y la confusión, sin saber cómo manejar su
-                  dolor. Si usted se encuentra preparado y cuenta con las
-                  herramientas para realizar una adecuada intervención, podrá
-                  acercarse con sensibilidad, creando un espacio seguro donde
-                  ella puede expresar sus emociones. Validar su dolor y ofrecer
-                  apoyo, ayudándola a entender que sus sentimientos son normales
-                  y que no está sola. Además, le sugiere recursos de apoyo, como
+                  <strong>3.</strong> La capacitación mejora la calidad de la
+                  atención brindada y fortalece la confianza del profesional en
+                  su capacidad para manejar situaciones difíciles.
+                  <br />
+                  <strong>4.</strong> Estar preparado en PAP permite a los
+                  profesionales adaptar su enfoque a diversos contextos y
+                  necesidades, asegurando así una respuesta más personalizada y
+                  efectiva.
+                  <br />
+                  <br />
+                  Por ejemplo, Imagine la escena en su sitio de práctica: En la
+                  institución donde usted se encuentra realizando sus prácticas
+                  profesionales, ingresa una paciente devastada porque acaba de
+                  perder a su madre. La paciente se siente abrumada por la
+                  tristeza y la confusión, sin saber cómo manejar su dolor. Si
+                  usted se encuentra preparado y cuenta con las herramientas
+                  para realizar una adecuada intervención, podrá acercarse con
+                  sensibilidad, crear un espacio seguro donde ella pueda
+                  expresar sus emociones. Validar su dolor y ofrecer apoyo,
+                  ayudándola a entender que sus sentimientos son normales y que
+                  no está sola. Además, le sugiere recursos de apoyo, como
                   grupos de duelo o terapia, lo que puede ser crucial para su
                   proceso de sanación. Esta capacidad de respuesta no solo ayuda
-                  a la joven a sentirse comprendida y apoyada, sino que también
-                  refuerza su confianza en su habilidad para manejar situaciones
-                  emocionales difíciles.
+                  a la persona atendida a sentirse comprendida y apoyada, sino
+                  que también refuerza su confianza en su habilidad para manejar
+                  situaciones de crisis.
                 </Typography>
               </Box>
             </div>

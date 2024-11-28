@@ -10,6 +10,12 @@ import HabilidadesComunicativas from "./HabilidadesComunicativas";
 import ReviewForm from "./ReviewForm";
 import Reviews from "./Reviews";
 import Recursos from "./Recursos";
+import Actitudes from "./Actitudes";
+import RegulacionDeEmociones from "./RegulacionDeEmociones";
+import TecnicaDeRelajacion from "./TecnicaDeRelajacion";
+import IdentificacionYExpresionEmocional from "./IdentificacionYExpresionEmocional";
+import EvaluacionDeLaSituacion from "./EvaluacionDeLaSituacion";
+import AproximacionSegura from "./AproximacionSegura";
 
 export default function AllBody() {
   return (
@@ -22,6 +28,12 @@ export default function AllBody() {
       <EtapaDePreparacion />
       <Enetrenamiento />
       <HabilidadesComunicativas />
+      <Actitudes/>
+      <RegulacionDeEmociones/>
+      <TecnicaDeRelajacion/>
+      <IdentificacionYExpresionEmocional/>
+      <EvaluacionDeLaSituacion/>
+      <AproximacionSegura/>
       <ReviewForm />
       <Reviews />
      

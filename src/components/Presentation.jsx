@@ -12,14 +12,37 @@ import {
 
 export default function Presentation() {
   const objetivos = [
-    "Proporcionar una herramienta accesible y comprensible para los psicólogos en formación, que les permita aplicar los Primeros Auxilios Psicológicos (PAP) de manera efectiva en situaciones de crisis.",
-    "Mejorar las habilidades y conocimientos de los psicólogos en formación, facilitando su preparación para intervenir en momentos críticos y responder adecuadamente a las necesidades de los afectados.",
-    "Actuar como orientación práctica para los psicólogos en formación, ofreciendo pautas claras sobre cómo abordar situaciones de crisis y aplicar técnicas de intervención.",
-    "Brindar psicoeducación sobre conceptos básicos, reglas y normas que garanticen intervenciones éticas y eficaces, asegurando el respeto por la dignidad y los derechos de los pacientes en todo momento.",
+    {
+      titulo: "Brindar alivio emocional inmediato",
+      cuerpo:
+        "Escuchar y consolar a la persona para reducir su angustia y estabilizar su estado emocional rápidamente.",
+    },
+    {
+      titulo: "Facilitar la adaptación",
+      cuerpo:
+        "Ayudar a la persona a acostumbrarse a las nuevas circunstancias con consejos prácticos y apoyo, promoviendo su resiliencia.",
+    },
+    {
+      titulo: "Fortalecer recursos de afrontamiento",
+      cuerpo:
+        "Potenciar estrategias de afrontamiento para enfrentar situaciones difíciles de manera efectiva",
+    },
+    {
+      titulo: "Prevenir el desarrollo de psicopatología",
+      cuerpo:
+        "Ofrecer ayuda psicológica temprana y recursos de apoyo para evitar trastornos mentales a largo plazo, asegurando su bienestar emocional.",
+    },
   ];
   return (
     <div className="presentacion">
-      <Container sx={{ display: "flex", flexDirection: "column", padding: 4, marginTop:"150px" }}>
+      <Container
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          padding: 4,
+          marginTop: "150px",
+        }}
+      >
         <Grid container spacing={4} alignItems="center">
           {/* Texto */}
           <Grid item xs={12} md={6}>
@@ -159,7 +182,7 @@ export default function Presentation() {
                         fontWeight: "700",
                       }}
                     >
-                      Objetivo {index + 1}
+                      {objetivo.titulo}
                     </Typography>
                     <Typography
                       variant="body1"
@@ -171,7 +194,7 @@ export default function Presentation() {
                         fontWeight: "700",
                       }}
                     >
-                      {objetivo}
+                      {objetivo.cuerpo}
                     </Typography>
                   </CardContent>
                 </Card>

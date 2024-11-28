@@ -8,6 +8,8 @@ import {
   Container,
 } from "@mui/material";
 import escuchaActiva from "../image/Escucha-activa.jpg";
+import empatia from "../image/empatia.jpg";
+import lenguaje from "../image/lenguaje corporal.jpg";
 
 const HabilidadesComunicativas = () => {
   return (
@@ -52,10 +54,7 @@ const HabilidadesComunicativas = () => {
                 >
                   Escucha activa
                 </Typography>
-                <Typography
-                  color="text.secondary"
-                  sx={{ marginTop: "10px", lineHeight: 1.8 }}
-                >
+                <Typography sx={{ marginTop: "10px", lineHeight: 1.8 }}>
                   La escucha activa es la capacidad de prestar atención plena al
                   discurso del afectado, sin interrumpir y mostrando interés
                   genuino. En PAP, esto implica captar tanto el contenido verbal
@@ -84,7 +83,7 @@ const HabilidadesComunicativas = () => {
                     style={{
                       width: "100%", // Hace que la imagen ocupe todo el ancho disponible
                       height: "100%", // Hace que la imagen ocupe toda la altura disponible
-                       // Mantiene la proporción de la imagen y cubre el espacio sin distorsionar
+                      // Mantiene la proporción de la imagen y cubre el espacio sin distorsionar
                     }}
                   />
                 </Box>
@@ -133,17 +132,25 @@ const HabilidadesComunicativas = () => {
               <Grid item xs={12} md={6}>
                 <Box
                   sx={{
-                    height: "200px",
-                    background: "#ecf0f1",
-                    borderRadius: "10px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
+                    height: "200px", // Altura del Box
+                    width: "100%", // Asegura que el Box ocupe todo el ancho disponible
+                    background: "#ecf0f1", // Color de fondo
+                    borderRadius: "10px", // Esquinas redondeadas
+                    display: "flex", // Para alinear la imagen
+                    justifyContent: "center", // Centrado horizontal
+                    alignItems: "center", // Centrado vertical
+                    overflow: "hidden", // Para evitar que la imagen se desborde
                   }}
                 >
-                  <Typography sx={{ color: "#95a5a6" }}>
-                    [Espacio para Imagen]
-                  </Typography>
+                  <img
+                    alt="Empatía"
+                    src={empatia}
+                    style={{
+                      width: "100%", // Hace que la imagen ocupe todo el ancho disponible
+                      height: "100%", // Hace que la imagen ocupe toda la altura disponible
+                      // Mantiene la proporción de la imagen y cubre el espacio sin distorsionar
+                    }}
+                  />
                 </Box>
               </Grid>
 
@@ -155,9 +162,7 @@ const HabilidadesComunicativas = () => {
                 >
                   Empatía
                 </Typography>
-                <Typography
-                  sx={{ marginTop: "10px", color: "#7f8c8d", lineHeight: 1.8 }}
-                >
+                <Typography sx={{ marginTop: "10px", lineHeight: 1.8 }}>
                   Es la habilidad de comprender y compartir las emociones de la
                   persona en crisis, sin juzgar. En PAP, es esencial para
                   transmitir calidez y aceptación, permitiendo que la persona se
@@ -183,7 +188,6 @@ const HabilidadesComunicativas = () => {
               style={{
                 marginTop: "10px",
                 paddingLeft: "20px",
-                color: "#7f8c8d",
               }}
             >
               <li>Organizar el contenido verbal del discurso de la persona.</li>
@@ -192,6 +196,36 @@ const HabilidadesComunicativas = () => {
                 persona.
               </li>
               <li>Aclarar los mensajes vagos o confusos.</li>
+            </ul>
+            <br />
+            <Typography
+              variant="h6"
+              sx={{ fontWeight: "bold", color: "#2c3e50" }}
+            >
+              Claridad y precisión:
+            </Typography>
+            <ul
+              style={{
+                marginTop: "10px",
+                paddingLeft: "20px",
+              }}
+            >
+              <li>
+                Asegurarse de que la información proporcionada sea clara y
+                precisa, evitando ambigüedades.
+              </li>
+              <li>
+                Estructurar la información de manera lógica y coherente para
+                facilitar la comprensión.
+              </li>
+              <li>
+                Comprobar que el usuario ha entendido correctamente la
+                información, utilizando preguntas y parafraseo.
+              </li>
+              <li>
+                Utilizar un lenguaje adecuado al nivel de comprensión del
+                usuario, evitando tecnicismos innecesarios.
+              </li>
             </ul>
           </CardContent>
         </Card>
@@ -202,7 +236,7 @@ const HabilidadesComunicativas = () => {
         >
           <CardContent>
             <Grid container spacing={4}>
-              <Grid item xs={12} md={6}>
+              {/* <Grid item xs={12} md={6}>
                 <Box
                   sx={{
                     height: "200px",
@@ -213,17 +247,15 @@ const HabilidadesComunicativas = () => {
                     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
                   }}
                 />
-              </Grid>
-              <Grid item xs={12} md={6}>
+              </Grid> */}
+              <Grid item xs={12} md={12}>
                 <Typography
                   variant="h6"
                   sx={{ fontWeight: "bold", color: "#2c3e50" }}
                 >
                   Validación emocional
                 </Typography>
-                <Typography
-                  sx={{ marginTop: "10px", color: "#7f8c8d", lineHeight: 1.8 }}
-                >
+                <Typography sx={{ marginTop: "10px", lineHeight: 1.8 }}>
                   Reconocer y aceptar las emociones de la persona como válidas,
                   sin minimizarlas o intentar solucionarlas de inmediato. En
                   PAP, ayuda a disminuir la sensación de aislamiento y
@@ -234,43 +266,8 @@ const HabilidadesComunicativas = () => {
           </CardContent>
         </Card>
 
-        {/* Sección: Parafraseo y retroalimentación */}
-        <Card
-          sx={{ marginBottom: "20px", background: "#ffffff", boxShadow: 3 }}
-        >
-          <CardContent>
-            <Grid container spacing={4}>
-              <Grid item xs={12} md={6}>
-                <Typography
-                  variant="h6"
-                  sx={{ fontWeight: "bold", color: "#2c3e50" }}
-                >
-                  Parafraseo y retroalimentación
-                </Typography>
-                <Typography
-                  sx={{ marginTop: "10px", color: "#7f8c8d", lineHeight: 1.8 }}
-                >
-                  Reformular las palabras de la persona para confirmar la
-                  comprensión y demostrar atención. Esto refuerza la conexión y
-                  asegura que el practicante esté alineado con las necesidades
-                  del afectado.
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <Box
-                  sx={{
-                    height: "200px",
-                    backgroundImage: "url('/ruta/a/tu-imagen3.jpg')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    borderRadius: "10px",
-                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-                  }}
-                />
-              </Grid>
-            </Grid>
-          </CardContent>
-        </Card>
+      
+         
 
         {/* Sección: Control del lenguaje no verbal */}
         <Card
@@ -281,14 +278,26 @@ const HabilidadesComunicativas = () => {
               <Grid item xs={12} md={6}>
                 <Box
                   sx={{
-                    height: "200px",
-                    backgroundImage: "url('/ruta/a/tu-imagen4.jpg')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    borderRadius: "10px",
-                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                    height: "200px", // Altura del Box
+                    width: "100%", // Asegura que el Box ocupe todo el ancho disponible
+                    background: "#ecf0f1", // Color de fondo
+                    borderRadius: "10px", // Esquinas redondeadas
+                    display: "flex", // Para alinear la imagen
+                    justifyContent: "center", // Centrado horizontal
+                    alignItems: "center", // Centrado vertical
+                    overflow: "hidden", // Para evitar que la imagen se desborde
                   }}
-                />
+                >
+                  <img
+                    alt="Empatía"
+                    src={lenguaje}
+                    style={{
+                      width: "100%", // Hace que la imagen ocupe todo el ancho disponible
+                      height: "100%", // Hace que la imagen ocupe toda la altura disponible
+                      // Mantiene la proporción de la imagen y cubre el espacio sin distorsionar
+                    }}
+                  />
+                </Box>
               </Grid>
               <Grid item xs={12} md={6}>
                 <Typography
@@ -297,24 +306,35 @@ const HabilidadesComunicativas = () => {
                 >
                   Control del lenguaje no verbal
                 </Typography>
-                <Typography
-                  sx={{ marginTop: "10px", color: "#7f8c8d", lineHeight: 1.8 }}
-                >
-                  Uso adecuado de gestos, postura y expresiones faciales para
-                  transmitir calma y apoyo. En PAP, una postura abierta y
-                  contacto visual adecuado fortalecen el mensaje de seguridad y
-                  cuidado.
+                <Typography sx={{ marginTop: "10px", lineHeight: 1.8 }}>
+                  Se refiere a la capacidad de manejar y utilizar de manera
+                  consciente las expresiones faciales, gestos, postura y otros
+                  movimientos del cuerpo para comunicar de forma efectiva y
+                  coherente con el mensaje verbal. Esto incluye asegurarse de
+                  que el lenguaje corporal apoye y refuerce lo que se está
+                  diciendo, evitando señales contradictorias.
                 </Typography>
                 <ul
                   style={{
                     marginTop: "10px",
                     paddingLeft: "20px",
-                    color: "#7f8c8d",
                   }}
                 >
-                  <li>Uso adecuado de gestos</li>
-                  <li>Postura que transmita receptividad</li>
-                  <li>Expresiones faciales que reflejen empatía</li>
+                  <li>
+                    Asentir con la cabeza: Mientras el usuario habla, asiente
+                    ligeramente con la cabeza para indicar que estás siguiendo y
+                    comprendiendo lo que dice.
+                  </li>
+                  <li>
+                    Inclinación hacia adelante: Inclinarse ligeramente hacia
+                    adelante mientras el usuario habla puede demostrar que estás
+                    interesado y comprometido con la conversación.
+                  </li>
+                  <li>
+                    Contacto visual: Mantén un contacto visual adecuado,
+                    mostrando interés y atención en la conversación. Evita mirar
+                    hacia otro lado o distraerte con otros elementos.
+                  </li>
                 </ul>
               </Grid>
             </Grid>
