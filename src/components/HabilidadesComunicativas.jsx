@@ -44,9 +44,9 @@ const HabilidadesComunicativas = () => {
           }}
         >
           <CardContent>
-            <Grid container spacing={4}>
+            <Grid container sx={{display:"flex", justifyContent:"space-between"}} spacing={12}>
               {/* Columna de texto */}
-              <Grid item xs={12} md={6}>
+              <Grid item xs={12} md={6} >
                 <Typography
                   variant="h6"
                   sx={{ fontWeight: "bold", color: "#2c3e50" }}
@@ -67,13 +67,14 @@ const HabilidadesComunicativas = () => {
                 <Box
                   sx={{
                     height: "200px", // Altura del Box
-                    width: "100%", // Asegura que el Box ocupe todo el ancho disponible
+                    width: "50%", // Asegura que el Box ocupe todo el ancho disponible
                     background: "#ecf0f1", // Color de fondo
                     borderRadius: "10px", // Esquinas redondeadas
                     display: "flex", // Para alinear la imagen
-                    justifyContent: "center", // Centrado horizontal
+                    justifyContent: "space-between", // Centrado horizontal
                     alignItems: "center", // Centrado vertical
                     overflow: "hidden", // Para evitar que la imagen se desborde
+                    border:"1px solid black"
                   }}
                 >
                   <img
@@ -268,7 +269,7 @@ const HabilidadesComunicativas = () => {
               <Grid item xs={12} md={6}>
                 <Box
                   sx={{
-                    height: "200px", // Altura del Box
+                    height: "400px", // Altura del Box
                     width: "100%", // Asegura que el Box ocupe todo el ancho disponible
                     background: "#ecf0f1", // Color de fondo
                     borderRadius: "10px", // Esquinas redondeadas
