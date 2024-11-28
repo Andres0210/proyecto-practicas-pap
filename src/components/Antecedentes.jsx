@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
-import imgAntecedentes1 from "../image/antecedents.jpg";
+import imgAntecedentes1 from "../image/hombre psico.jpg";
 import imgAntecedentes2 from "../image/pexels-david-garrison-1128051-2128817.jpg";
 
 export default function Antecedentes() {
