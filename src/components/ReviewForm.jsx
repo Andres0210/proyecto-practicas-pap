@@ -9,9 +9,8 @@ import {
   CircularProgress,
   Container,
 } from "@mui/material";
-import axios from "axios";
 
-export default function ReviewForm() {
+export default function ReviewForm({ addReview }) {
   const [formData, setFormData] = useState({
     email: "",
     rating: 0,
@@ -43,10 +42,7 @@ export default function ReviewForm() {
     setError("");
 
     try {
-      await axios.post(
-        "https://back-pap-production.up.railway.app/review",
-        formData
-      );
+      await addReview(formData); // Llama a la función `addReview` pasada como prop
       setSuccess(true);
       setFormData({ email: "", rating: 0, comment: "" }); // Reinicia el formulario
     } catch (err) {

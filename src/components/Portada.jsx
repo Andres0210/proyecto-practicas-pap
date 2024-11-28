@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography, Container } from "@mui/material";
-import imagenn from '../image/pexels-alex-green-5699864.jpg'
+import imagenn from '../image/portadaimg.webp'
 
 export default function Portada() {
   return (
@@ -27,7 +27,7 @@ export default function Portada() {
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundColor: "rgba(0, 0, 0, 0.6)", // Oscurece la imagen con un overlay
+         backgroundColor: "rgba(0, 0, 0, 0.5)", // Oscurece la imagen con un overlay
           zIndex: 1,
         }}
       />
@@ -56,7 +56,7 @@ export default function Portada() {
           variant="h5"
           sx={{
             marginTop: 2,
-            fontSize: { xs: "1.2rem", md: "1.5rem" },
+            fontSize: { xs: "1.2rem", md: "3rem" },
             opacity: 0.9,
           }}
         >

@@ -4,7 +4,7 @@ import entrenamientoImg from "../image/pexels-polina-zimmerman-3747462.jpg";
 
 export default function Enetrenamiento() {
   return (
-    <div className="presentacion">
+    <div id="4" className="presentacion">
       <Container sx={{ display: "flex", flexDirection: "column", padding: 4 }}>
         <Typography
           variant="h5"
@@ -18,9 +18,9 @@ export default function Enetrenamiento() {
             textAlign: "center",
             color: "#6ede00",
           }}
-          id="3"
         >
-          ¿Porqué es importante el entrenamiento?
+          Entrenamiento - ¿Por qué es importante el entrenamiento para brindar
+          PAP?
         </Typography>
         <Grid2 container spacing={4} alignItems="center">
           {/* Texto */}
@@ -55,22 +55,25 @@ export default function Enetrenamiento() {
                   efectiva.
                   <br />
                   <br />
-                  Por ejemplo, Imagine la escena en su sitio de práctica: En la
-                  institución donde usted se encuentra realizando sus prácticas
-                  profesionales, ingresa una paciente devastada porque acaba de
-                  perder a su madre. La paciente se siente abrumada por la
-                  tristeza y la confusión, sin saber cómo manejar su dolor. Si
-                  usted se encuentra preparado y cuenta con las herramientas
-                  para realizar una adecuada intervención, podrá acercarse con
-                  sensibilidad, crear un espacio seguro donde ella pueda
-                  expresar sus emociones. Validar su dolor y ofrecer apoyo,
-                  ayudándola a entender que sus sentimientos son normales y que
-                  no está sola. Además, le sugiere recursos de apoyo, como
-                  grupos de duelo o terapia, lo que puede ser crucial para su
-                  proceso de sanación. Esta capacidad de respuesta no solo ayuda
-                  a la persona atendida a sentirse comprendida y apoyada, sino
-                  que también refuerza su confianza en su habilidad para manejar
-                  situaciones de crisis.
+                  Los primeros auxilios psicológicos pueden darse en cualquier
+                  contexto, no solo en su sitio de práctica. Como profesional en
+                  psicología, es fundamental estar preparado para abordar de
+                  manera eficaz estos casos, independientemente del lugar en el
+                  que se presenten. Imagine que en su lugar de trabajo ingresa
+                  una compañera devastada, pues acaba de perder a su madre. Se
+                  encuentra abrumada por la tristeza y la confusión, sin saber
+                  cómo manejar su dolor. En una situación como esta, si cuenta
+                  con las herramientas adecuadas y está preparado para
+                  intervenir, puede acercarse con sensibilidad y crear un
+                  espacio seguro en el que ella se sienta cómoda para expresar
+                  sus emociones. Es importante validar su dolor y ofrecer apoyo,
+                  ayudándola a comprender que sus sentimientos son normales y
+                  que no está sola. Puede sugerirle recursos de apoyo, como
+                  grupos de duelo o terapia, los cuales pueden ser cruciales
+                  para su proceso de sanación. Esta capacidad de respuesta no
+                  solo ayuda a la persona atendida a sentirse comprendida y
+                  apoyada, sino que también refuerza su confianza en su
+                  habilidad para manejar situaciones de crisis.
                 </Typography>
               </Box>
             </div>

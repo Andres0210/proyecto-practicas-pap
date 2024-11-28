@@ -3,7 +3,7 @@ import { Typography, Box, Paper, Container } from "@mui/material";
 
 const IdentificacionYExpresionEmocional = () => {
   return (
-    <Box sx={{ p: 2 }}>
+    <Box id="9" sx={{ p: 2 }}>
       <Container elevation={3} sx={{ p: 3, mb: 3 }}>
         <Typography
           variant="h5"
@@ -19,7 +19,7 @@ const IdentificacionYExpresionEmocional = () => {
             color: "#6ede00",
             
           }}
-          id="6"
+          
           textAlign="center"
           
         >

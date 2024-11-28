@@ -12,6 +12,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import logoAndina from "../image/Logo_de_Areandina.svg.png";
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -41,6 +42,7 @@ const Navbar = () => {
   const goToContactanos = () => {
     navigate("/contact");
   };
+
   return (
     <AppBar
       position="fixed"
@@ -50,33 +52,37 @@ const Navbar = () => {
       }}
     >
       <Toolbar>
-        {/* Logo o título */}
-        <Typography
+        {/* Logo y título */}
+        <Box
           onClick={goToHome}
-          variant="h6"
           sx={{
+            padding: "15px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
             flexGrow: 1,
-            fontWeight: "bold",
-            textTransform: "uppercase",
-            color: "#ff00ff",
+            cursor: "pointer",
           }}
         >
-          Mi Navbar
-        </Typography>
+          <img
+            src={logoAndina}
+            alt="Logo de Areandina"
+            style={{ width: "150px", height: "auto", marginRight: "10px" }}
+          />
+        </Box>
 
         {/* Botones en pantallas grandes */}
         <Box sx={{ display: { xs: "none", md: "flex" } }}>
           <Button
             onClick={goToRecursos}
             sx={{
-              backgroundColor: "#8bbe35", // Color del fondo
-              color: "#fff", // Color del texto
-              borderRadius: "8px", // Bordes redondeados
-              padding: "8px 16px", // Relleno para que el botón se vea más grande
-              margin: "0 8px", // Espaciado entre botones
+              color: "#8bbe35", // Color del texto
+              borderRadius: "8px",
+              padding: "8px 16px",
+              margin: "0 8px",
               "&:hover": {
-                backgroundColor: "#7a9f2b", // Color al pasar el mouse
-                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", // Sombra al pasar el mouse
+                backgroundColor: "#7a9f2b",
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
               },
             }}
           >
@@ -85,14 +91,13 @@ const Navbar = () => {
           <Button
             onClick={goToAboutUs}
             sx={{
-              backgroundColor: "#8bbe35", // Color del fondo
-              color: "#fff", // Color del texto
-              borderRadius: "8px", // Bordes redondeados
-              padding: "8px 16px", // Relleno para que el botón se vea más grande
-              margin: "0 8px", // Espaciado entre botones
+              color: "#8bbe35", // Color del texto
+              borderRadius: "8px",
+              padding: "8px 16px",
+              margin: "0 8px",
               "&:hover": {
-                backgroundColor: "#7a9f2b", // Color al pasar el mouse
-                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", // Sombra al pasar el mouse
+                backgroundColor: "#7a9f2b",
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
               },
             }}
           >
@@ -101,14 +106,13 @@ const Navbar = () => {
           <Button
             onClick={goToContactanos}
             sx={{
-              backgroundColor: "#8bbe35", // Color del fondo
-              color: "#fff", // Color del texto
-              borderRadius: "8px", // Bordes redondeados
-              padding: "8px 16px", // Relleno para que el botón se vea más grande
-              margin: "0 8px", // Espaciado entre botones
+              color: "#8bbe35", // Color del texto
+              borderRadius: "8px",
+              padding: "8px 16px",
+              margin: "0 8px",
               "&:hover": {
-                backgroundColor: "#7a9f2b", // Color al pasar el mouse
-                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", // Sombra al pasar el mouse
+                backgroundColor: "#7a9f2b",
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
               },
             }}
           >
@@ -127,9 +131,15 @@ const Navbar = () => {
             onClose={handleMenuClose}
             sx={{ mt: "40px" }}
           >
-            <MenuItem onClick={handleMenuClose}>Botón 1</MenuItem>
-            <MenuItem onClick={handleMenuClose}>Botón 2</MenuItem>
-            <MenuItem onClick={handleMenuClose}>Botón 3</MenuItem>
+            <MenuItem onClick={handleMenuClose}>
+              <Typography onClick={goToRecursos}>Recursos</Typography>
+            </MenuItem>
+            <MenuItem onClick={handleMenuClose}>
+              <Typography onClick={goToAboutUs}>Sobre nosotros</Typography>{" "}
+            </MenuItem>
+            <MenuItem onClick={handleMenuClose}>
+              <Typography onClick={goToContactanos}>Contáctanos</Typography>
+            </MenuItem>
           </Menu>
         </Box>
       </Toolbar>

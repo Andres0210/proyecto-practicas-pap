@@ -13,7 +13,7 @@ import lenguaje from "../image/lenguaje corporal.jpg";
 
 const HabilidadesComunicativas = () => {
   return (
-    <Box>
+    <Box id="5">
       <Container style={{ marginTop: "50px" }}>
         {/* Título principal */}
         <Typography
@@ -29,7 +29,6 @@ const HabilidadesComunicativas = () => {
             textAlign: "center",
             color: "#6ede00",
           }}
-          id="4"
         >
           ¿Cuáles son las habilidades comunicativas necesarias para llevar a
           cabo una intervención segura y respetuosa en situaciones de crisis?
@@ -184,19 +183,13 @@ const HabilidadesComunicativas = () => {
             >
               Función informativa:
             </Typography>
-            <ul
-              style={{
-                marginTop: "10px",
-                paddingLeft: "20px",
-              }}
-            >
-              <li>Organizar el contenido verbal del discurso de la persona.</li>
-              <li>
-                Comprobar la precisión en la que hemos entendido lo dicho por la
-                persona.
-              </li>
-              <li>Aclarar los mensajes vagos o confusos.</li>
-            </ul>
+            <Typography sx={{ marginTop: "10px", lineHeight: 1.8 }}>
+              Se refiere a la capacidad de transmitir datos, hechos o
+              conocimientos de manera clara y precisa. Es cuando usamos la
+              comunicación para compartir información útil y relevante con los
+              demás, asegurándonos de que el mensaje sea entendido
+              correctamente.
+            </Typography>
             <br />
             <Typography
               variant="h6"
@@ -265,9 +258,6 @@ const HabilidadesComunicativas = () => {
             </Grid>
           </CardContent>
         </Card>
-
-      
-         
 
         {/* Sección: Control del lenguaje no verbal */}
         <Card

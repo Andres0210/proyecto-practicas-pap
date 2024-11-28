@@ -48,13 +48,12 @@ const EvaluacionDeLaSituacion = () => {
   ];
 
   return (
-    <Container maxWidth="md" sx={{ py: 4 }}>
+    <Container id="10"  sx={{ py: 4 }}>
       <Typography
         variant="h5"
         gutterBottom
         component="a"
         sx={{
-   
           fontWeight: "bold",
           color: "#333",
           textTransform: "uppercase",
@@ -62,12 +61,18 @@ const EvaluacionDeLaSituacion = () => {
 
           color: "#6ede00",
         }}
-        id="6"
         align="center"
       >
         Evaluación de la Situación
       </Typography>
-      <Divider sx={{ mb: 3 }} />
+      <Divider sx={{ mb: 6 }} />
+      <Typography
+        variant="body1"
+        color="text.secondary"
+        sx={{ fontSize: "1.1rem", mt: 4, mb: 5 }}
+      >
+        "Haz clic para expandir y ver el contenido."
+      </Typography>
       <Box>
         {steps.map((step, index) => (
           <Accordion key={index} defaultExpanded={index === 0}>
@@ -87,7 +92,7 @@ const EvaluacionDeLaSituacion = () => {
                     key={idx}
                     style={{ marginBottom: "10px", listStyle: "none" }}
                   >
-                    <CheckCircleIcon  sx={{ mr: 1, color:"#6ede00" }} />
+                    <CheckCircleIcon sx={{ mr: 1, color: "#6ede00" }} />
                     <Typography variant="body1" component="span">
                       {detail}
                     </Typography>

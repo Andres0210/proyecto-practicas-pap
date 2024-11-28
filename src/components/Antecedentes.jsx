@@ -7,33 +7,32 @@ export default function Antecedentes() {
   return (
     <div style={{ marginTop: "250px" }}>
       <Box
-        id="0"
+        id="1"
         sx={{
           background: "linear-gradient(to bottom, #ffffff, #f2f2f2",
           padding: "150px 0",
         }}
       >
         <Container>
+          <Typography
+            variant="h4"
+            gutterBottom
+            component="a"
+            sx={{
+              position: "relative",
+              fontWeight: "bold",
+              textTransform: "uppercase",
+              letterSpacing: "2px",
+              textAlign: "center",
+              color: "#6ede00",
+            }}
+          >
+            Antecedentes
+          </Typography>
           <Grid container spacing={4}>
             {/* Primera columna: texto arriba, imagen abajo */}
             <Grid item xs={12} md={6}>
               <Box>
-                <Typography
-                  variant="h4"
-                  gutterBottom
-                  component="a"
-                  sx={{
-                    position: "relative",
-                    fontWeight: "bold",
-                    textTransform: "uppercase",
-                    letterSpacing: "2px",
-                    textAlign: "center",
-                    color: "#6ede00",
-                  }}
-                  id="0"
-                >
-                  Antecedentes
-                </Typography>
                 <Typography
                   variant="body1"
                   color="text.secondary"
@@ -69,6 +68,7 @@ export default function Antecedentes() {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
+                  width: "400px"
                 }}
               >
                 <img
@@ -91,6 +91,7 @@ export default function Antecedentes() {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
+                  width:"400px"
                 }}
               >
                 <img
@@ -112,18 +113,18 @@ export default function Antecedentes() {
                 >
                   Una intervención efectiva es crucial para el bienestar de las
                   personas, especialmente en situaciones que pueden amenazar su
-                  vida o salud mental. Los Primeros Auxilios Psicológicos (PAP)
-                  se han consolidado como una herramienta esencial en este
+                  salud mental y su vida. Los Primeros Auxilios Psicológicos
+                  (PAP) se han consolidado como una herramienta esencial en este
                   contexto, promoviendo la recuperación emocional y la
                   prevención de secuelas psicológicas. Estas intervenciones
                   están diseñadas para ofrecer apoyo inmediato a quienes
                   enfrentan crisis, como desastres naturales, accidentes o
                   situaciones de violencia, y su objetivo es restaurar el
                   equilibrio emocional y prevenir el desarrollo de trastornos
-                  más graves. Según Hobfoll et al. (2007), los PAP se
-                  fundamentan en cinco elementos clave: calma, seguridad,
-                  autoeficacia, conexión y esperanza, que son vitales para guiar
-                  a los profesionales en la atención de personas en crisis. La
+                  más graves. Según Hobfoll (2007), los PAP se fundamentan en
+                  cinco elementos clave: calma, seguridad, autoeficacia,
+                  conexión y esperanza, que son vitales para guiar a los
+                  profesionales en la atención de personas en crisis. La
                   importancia de los PAP radica no solo en su capacidad para
                   mitigar el estrés y la angustia, sino también en su potencial
                   para prevenir situaciones que puedan poner en peligro la vida
@@ -132,16 +133,16 @@ export default function Antecedentes() {
                   invasivas, enfocándose en las necesidades inmediatas de los
                   afectados. Escuchar sin forzar a hablar sobre el trauma,
                   reconfortar y ayudar a la calma mediante técnicas de
-                  relajación son componentes esenciales de esta técnica. Para
-                  los psicólogos, estar preparados para aplicar los PAP de
-                  manera efectiva es fundamental, ya que les permite actuar con
-                  confianza y competencia en momentos críticos. La creación de
-                  una guía de intervención en crisis se presenta como una
-                  necesidad imperante, proporcionando a los profesionales en
-                  formación las herramientas necesarias para implementar los PAP
-                  de forma ética y efectiva, contribuyendo así al bienestar
-                  emocional de las personas y a la prevención de consecuencias
-                  más graves en situaciones de vulnerabilidad.
+                  relajación son componentes esenciales de esta técnica. Estar
+                  preparados para aplicar los PAP de manera efectiva es
+                  fundamental, ya que permite actuar con confianza y competencia
+                  en momentos críticos. La creación de una guía de intervención
+                  en crisis se presenta como una necesidad imperante,
+                  proporcionando a los profesionales en formación las
+                  herramientas necesarias para implementar los PAP de forma
+                  ética y efectiva, contribuyendo así al bienestar emocional de
+                  las personas y a la prevención de consecuencias más graves en
+                  situaciones de vulnerabilidad.
                 </Typography>
               </Box>
             </Grid>

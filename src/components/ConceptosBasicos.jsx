@@ -11,7 +11,7 @@ import { conceptos, conceptosCrisis } from "../utils/conceptos";
 
 export default function ConceptosBasicos() {
   return (
-    <Container style={{ marginTop: "150px" }}>
+    <Container id="2" style={{ marginTop: "150px" }}>
       <Typography
         variant="h4"
         gutterBottom
@@ -24,7 +24,6 @@ export default function ConceptosBasicos() {
           textAlign: "center",
           color: "#6ede00",
         }}
-        id="1"
       >
         Conceptos básicos<br></br>
         <br></br>
@@ -45,7 +44,7 @@ export default function ConceptosBasicos() {
       <Grid2
         container
         spacing={3}
-        style={{ padding: "20px", marginTop: "60px" }}
+        style={{ padding: "20px", marginTop: "60px", marginBottom:"80px" }}
       >
         {conceptos.map((concepto, index) => (
           <Grid2 item xs={12} sm={6} md={4} key={index}>
@@ -92,6 +91,7 @@ export default function ConceptosBasicos() {
           fontWeight: "bold",
           textTransform: "uppercase",
           letterSpacing: "2px",
+          mb: 10,
         }}
       >
         Crisis

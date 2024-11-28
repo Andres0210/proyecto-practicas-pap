@@ -58,7 +58,7 @@ const TecnicaDeRelajacion = () => {
   ];
 
   return (
-    <Box sx={{ p: 2 }}>
+    <Box id="8" sx={{ p: 2 }}>
       <Container>
         <Paper elevation={3} sx={{ p: 3, mb: 3 }}>
           <Typography
@@ -74,14 +74,16 @@ const TecnicaDeRelajacion = () => {
               textAlign: "center",
               color: "#6ede00",
             }}
-            id="6"
+            
           >
             Técnica de Relajación Muscular Progresiva
           </Typography>
+          <div style={{marginTop:"30px"}}>
           <Typography variant="body1" paragraph>
             Este método ayuda a distinguir entre la tensión y la relajación en
             tu cuerpo, promoviendo una sensación de calma profunda.
           </Typography>
+          </div>
         </Paper>
         <List>
           {steps.map((step, index) => (

@@ -27,7 +27,7 @@ const bubbleStyle = {
 
 const Actitudes = () => {
   return (
-    <Container maxWidth="lg" sx={{ mt: 5, mb: 5 }}>
+    <Container id="6" maxWidth="lg" sx={{ mt: 15, mb: 15 }}>
       <Typography
         variant="h5"
         gutterBottom
@@ -41,7 +41,7 @@ const Actitudes = () => {
           textAlign: "center",
           color: "#6ede00",
         }}
-        id="5"
+        
       >
         Actitudes del Interventor para Brindar Primeros Auxilios Psicológicos
       </Typography>

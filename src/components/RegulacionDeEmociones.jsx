@@ -59,7 +59,7 @@ const RegulaacionDeEmociones = () => {
   ];
 
   return (
-    <Container maxWidth="md" sx={{ mt: 4, mb: 4 }}>
+    <Container id="7"  sx={{ mt: 4, mb: 4 }}>
       {/* Título */}
       <Box sx={{ mb: 4, textAlign: "center" }}>
         <Typography
@@ -75,14 +75,17 @@ const RegulaacionDeEmociones = () => {
             textAlign: "center",
             color: "#6ede00",
           }}
-          id="6"
+          
         >
-          Regulación de Emociones
+          Regulación de emociones: Estrategias de afrontamiento: Manejo del
+          estrés, Técnicas de relajación, Identificación y expresión emocional.
         </Typography>
+        <div style={{marginTop:"30px"}}>
         <Typography variant="subtitle1" color="text.secondary">
           Estrategias de afrontamiento: Manejo del estrés, Técnicas de
           relajación, Identificación y expresión emocional
         </Typography>
+        </div>
       </Box>
 
       {/* Contenido principal */}
@@ -122,7 +125,7 @@ const RegulaacionDeEmociones = () => {
       </Accordion>
 
       {/* Paso a paso */}
-      <Box sx={{ mt: 4 }}>
+      <Box maxWidth="md" sx={{ mt: 4, margin:"70px auto" }}>
         <Typography variant="h5" gutterBottom>
           ¿Cómo hacerlo? Paso a paso:
         </Typography>

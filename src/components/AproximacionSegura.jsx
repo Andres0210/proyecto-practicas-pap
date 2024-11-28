@@ -11,7 +11,8 @@ const AproximacionSegura = () => {
   };
 
   return (
-    <Container sx={{ p: 3 }}>
+    <Container id="11" sx={{ p: 3 }}>
+      <div style={{marginBottom:"40px"}}>
       <Typography  variant="h5"
           gutterBottom
           component="a"
@@ -25,11 +26,11 @@ const AproximacionSegura = () => {
             color: "#6ede00",
             
           }}
-          id="6"
+          
           textAlign="center">
         Aproximación Segura
       </Typography>
-
+      </div>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

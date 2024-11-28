@@ -7,6 +7,7 @@ import {
   CardMedia,
   Box,
   Button,
+  Container,
 } from "@mui/material";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useNavigate } from "react-router-dom";
@@ -37,6 +38,7 @@ export default function Recursos() {
     navigate("/");
   };
   return (
+    <Container>
     <Box
       sx={{
         backgroundColor: "#f9f9f9",
@@ -69,9 +71,10 @@ export default function Recursos() {
           fontWeight: "bold",
           marginBottom: "20px",
           color: "#333",
+          mb: 5
         }}
       >
-        Videos de Intervención en Crisis
+        Videos complementarios
       </Typography>
       <Grid container spacing={4} justifyContent="center">
         {videos.map((video, index) => (
@@ -108,5 +111,6 @@ export default function Recursos() {
         ))}
       </Grid>
     </Box>
+    </Container>
   );
 }

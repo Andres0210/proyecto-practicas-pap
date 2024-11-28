@@ -13,22 +13,22 @@ import {
 export default function Presentation() {
   const objetivos = [
     {
-      titulo: "Brindar alivio emocional inmediato",
+      titulo: "Brindar Alivio Emocional Inmediato",
       cuerpo:
         "Escuchar y consolar a la persona para reducir su angustia y estabilizar su estado emocional rápidamente.",
     },
     {
-      titulo: "Facilitar la adaptación",
+      titulo: "Facilitar la Adaptación",
       cuerpo:
         "Ayudar a la persona a acostumbrarse a las nuevas circunstancias con consejos prácticos y apoyo, promoviendo su resiliencia.",
     },
     {
-      titulo: "Fortalecer recursos de afrontamiento",
+      titulo: "Fortalecer Recursos de Afrontamiento",
       cuerpo:
         "Potenciar estrategias de afrontamiento para enfrentar situaciones difíciles de manera efectiva",
     },
     {
-      titulo: "Prevenir el desarrollo de psicopatología",
+      titulo: "Prevenir el Desarrollo de Psicopatologías",
       cuerpo:
         "Ofrecer ayuda psicológica temprana y recursos de apoyo para evitar trastornos mentales a largo plazo, asegurando su bienestar emocional.",
     },
@@ -93,10 +93,9 @@ export default function Presentation() {
                   psicólogos en formación aspectos importantes para una
                   comunicación asertiva y un abordaje efectivo en momentos de
                   crisis. Se incorporan estrategias que ayudarán a mejorar sus
-                  habilidades y conocimientos en la intervención. Esta guía no
-                  es un manual, sino un recurso práctico diseñado para
+                  habilidades y conocimientos en la intervención. Esta guía es un recurso práctico diseñado para
                   fortalecer las competencias de los estudiantes, fomentando un
-                  ambiente de confianza y respeto donde los pacientes se sientan
+                  ambiente de confianza y respeto donde los usuarios se sientan
                   valorados y escuchados. Al ofrecer un apoyo efectivo en
                   momentos críticos, se espera contribuir al bienestar emocional
                   de quienes enfrentan situaciones de vulnerabilidad. Con la
@@ -167,6 +166,7 @@ export default function Presentation() {
                     alignItems: "center",
                     justifyContent: "center",
                     transition: "transform 0.3s ease",
+                   
                     "&:hover": {
                       transform: "scale(1.05)",
                     },
@@ -180,6 +180,7 @@ export default function Presentation() {
                         textAlign: "center",
                         mb: 2,
                         fontWeight: "700",
+                       
                       }}
                     >
                       {objetivo.titulo}

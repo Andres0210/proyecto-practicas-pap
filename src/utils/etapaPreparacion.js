@@ -1,7 +1,7 @@
 import imagen1 from "../image/thought-catalog-BlGmdY18CFQ-unsplash.jpg"
 import imagen2 from "../image/pexels-fauxels-3184418.jpg"
-import imagen3 from "../image/pexels-cottonbro-4101143.jpg"
-import imagen4 from "../image/pexels-silverkblack-23495757.jpg"
+import imagen3 from "../image/conocimiento.jpg"
+import imagen4 from "../image/aplicabilidad.jpg"
 export const etapaData = [
     {
       subtitulo: "¿Estoy en condiciones? ",
@@ -24,8 +24,8 @@ export const etapaData = [
     },
     {
       subtitulo: "Evaluar aplicabilidad",
-      definicion: "Finalmente, es necesario evaluar la aplicabilidad de los Primeros Auxilios Psicológicos en el contexto específico. Algunas personas en crisis pueden no desear una intervención, por lo que es vital respetar sus decisiones. Siempre se debe recordar a los afectados que el facilitador está disponible para ofrecer ayuda si la necesitan en el futuro.",
+      definicion: "Es fundamental considerar que, en el contexto de los Primeros Auxilios Psicológicos (PAP), la intervención debe ser ofrecida de manera proactiva, incluso si la persona en crisis inicialmente no desea recibirla. La naturaleza de una crisis puede hacer que las personas se sientan abrumadas y poco receptivas a la ayuda en ese momento. Sin embargo, es crucial que el profesional esté presente y ofrezca apoyo, ya que esto puede marcar una diferencia significativa en la recuperación del usuario.",
       imagen: imagen4,
-      reflexion: `"Es importante respetar las decisiones del afectado y siempre recordarle que usted estará disponible para ofrecer ayuda."`,
+      reflexion: `"Si bien es importante reconocer y respetar las condiciones del afectado, en estos casos se debe brindar el apoyo necesario y oportuno"`,
     },
   ];

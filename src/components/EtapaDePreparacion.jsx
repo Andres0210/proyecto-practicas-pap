@@ -4,7 +4,7 @@ import { Box, Container, Typography } from "@mui/material";
 
 export default function EtapaDePreparacion() {
   return (
-    <div>
+    <div id="3">
       {" "}
       <Container sx={{ paddingY: 4, marginTop: "120px" }}>
         {/* Título Principal */}
@@ -20,9 +20,8 @@ export default function EtapaDePreparacion() {
             textAlign: "center",
             color: "#6ede00",
           }}
-          id="2"
         >
-          Etapa de preparación
+          Etapa de preparación del profesional
         </Typography>
 
         {/* Subtítulos con contenido */}
@@ -62,6 +61,9 @@ export default function EtapaDePreparacion() {
                 fontStyle: "italic",
                 textAlign: "justify",
                 color: "gray",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
               }}
             >
               {item.reflexion}
