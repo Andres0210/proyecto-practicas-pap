@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
-import imgAntecedentes1 from "../image/pexels-shvets-production-7176319.jpg";
+import imgAntecedentes1 from "../image/antecedents.jpg";
 import imgAntecedentes2 from "../image/pexels-david-garrison-1128051-2128817.jpg";
 
 export default function Antecedentes() {
@@ -68,13 +68,14 @@ export default function Antecedentes() {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  width: "400px"
+                  width: "600px"
                 }}
               >
                 <img
                   src={imgAntecedentes1} // Cambia esta URL
                   alt="Ilustración 1"
                   style={{
+                    width:"300px",
                     maxWidth: "100%",
                     borderRadius: "8px",
                     boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",

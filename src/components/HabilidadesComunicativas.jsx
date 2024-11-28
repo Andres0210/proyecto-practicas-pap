@@ -7,7 +7,7 @@ import {
   CardContent,
   Container,
 } from "@mui/material";
-import escuchaActiva from "../image/Escucha-activa.jpg";
+import escuchaActiva from "../image/escuchaaaa.jpg";
 import empatia from "../image/empatia.jpg";
 import lenguaje from "../image/lenguaje corporal.jpg";
 
