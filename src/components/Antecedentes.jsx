@@ -75,7 +75,7 @@ export default function Antecedentes() {
                   src={imgAntecedentes1} // Cambia esta URL
                   alt="Ilustración 1"
                   style={{
-                    width:"300px",
+                    width:"500px",
                     maxWidth: "100%",
                     borderRadius: "8px",
                     boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
