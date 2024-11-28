@@ -24,6 +24,7 @@ const content = [
   { id: 12, text: "Manejo del lenguaje" },
   { id: 13, text: "Priorización de necesidades" },
   { id: 14, text: "Que hacer y Que no hacer" },
+  { id: 15, text: "Referencias Bibliográficas" },
 ];
 
 export default function Contenido() {
